@@ -1,7 +1,11 @@
 import { useSyncExternalStore } from "react";
 
 export default function useSyncExternalStoreExample() {
-    const isOnline = useSyncExternalStore(subscribe, getSnapshot);
+    const isOnline = useSyncExternalStore(
+        subscribe,
+        getSnapshot,
+        getServerSnapshot
+    );
 
     return (
         <div>
@@ -16,6 +20,10 @@ export default function useSyncExternalStoreExample() {
 
 function getSnapshot() {
     return navigator.onLine;
+}
+
+function getServerSnapshot() {
+    return true;
 }
 
 function subscribe(callback: any) {
