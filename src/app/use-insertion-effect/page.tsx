@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import UseSyncExternalStoreExample from "@/components/useSyncExternalStore/useSyncExternalStore";
 
 export default function UseTransition() {
     return (

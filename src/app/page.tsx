@@ -39,6 +39,12 @@ export default function UseTransition() {
                 >
                     useInsertionEffect
                 </Link>
+                <Link
+                    className={`text-3xl antialiased text-indigo-500 m-5 cursor-pointer hover:text-indigo-300 transition-none underline `}
+                    href="use-memo"
+                >
+                    useMemo
+                </Link>
             </div>
         </main>
     );
